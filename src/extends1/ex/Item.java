@@ -1,6 +1,6 @@
 package extends1.ex;
 
-public class Item {
+public class Item { // final 이 클래스에 붙으면 상속을 못한다.
 
     private String name;
     private int price;
@@ -15,7 +15,7 @@ public class Item {
     }
 
     // 이름: JAVA 가격: 10000
-    public void print(){
+    public void print(){ // 메서드에 final 을 붙이면 오버라이딩 (메서드를 변경 x)
         System.out.println("이름:" + name +", 가격:" + price);
     }
 }
